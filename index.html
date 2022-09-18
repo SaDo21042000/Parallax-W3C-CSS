@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="nav">
+        <div class="nav-content">
+            <a href="#">home</a>
+            <a href="#"><i class="fa fa-user"></i>about</a>
+            <a href=""><i class="fa fa-th"></i>PORTFOLIO</a>
+            <a href=""><i class="fa fa-envelope"></i>CONTACT</a>
+            <a href=""><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <!-- Do later-->
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="first-parallax">
+        <div class="first-parallax__text">
+            <pan>my</pan>
+            <span>website</span>
+            <span>logo</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="about">
+        <h3>about me</h3>
+        <p>I love photography</p>
+        <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+        <div class="about-personal">
+            <div class="about-personal__item">
+                <p>
+                    <b><i class="fa fa-user w3-margin-right"></i> My Name</b>
+                    <br>
+                    <img src="" alt="">
+                </p>
+            </div>
+            <div class="about-personal__item">
+                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <p>Im really good at:</p>
+        <div class="about-specialize">
+            <p><i class="fa fa-camera"></i> Photography</p>
+            <div class="about-specialize_level">90%</div>
+        </div>
+        <div class="about-specialize">
+            <p><i class="fa fa-laptop"></i> Web Design</p>
+            <div class="about-specialize_level">85%</div>
+        </div>
+        <div class="about-specialize">
+            <p><i class="far fa-image"></i> Photoshop</p>
+            <div class="about-specialize_level">7%</div>
+        </div>
+    </div>
+
+    <div class="rank-index">
+        <div class="rank-index__item">
+            <span>14+</span>
+            <br>
+            Partners
+        </div>
+        <div class="rank-index__item">
+            <span>55+</span>
+            <br>
+            Projects Done
+        </div>
+        <div class="rank-index__item">
+            <span>89+</span>
+            <br>
+            Happy Clients
+        </div>
+        <div class="rank-index__item">
+            <span>150+</span>
+            <br>
+            Meetings
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="second-parallax">
+        <div class="second-parallax__text">
+            <span>PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="portfolio">
+        <h3>MY WORK</h3>
+        <p>
+            <em>
+                Here are some of my latest lorem work ipsum tipsum.
+                <br>
+                Click on the images to make them bigger
+            </em>
+        </p>
+        <br>
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="portfolio-images grid-images">
+            <div class="grid-images__item">
+                <img src="" alt="Image of portfolio">
+            </div>
+            <div class="grid-images__item">
+                <img src="" alt="Image of portfolio">
+            </div>
+            <div class="grid-images__item">
+                <img src="" alt="Image of portfolio">
+            </div>
+            <div class="grid-images__item">
+                <img src="" alt="Image of portfolio">
+            </div>
+        </div>
+        <div class="portfolio-images grid-images">
+            <div class="grid-images__item">
+                <img src="" alt="Image of portfolio">
+            </div>
+            <div class="grid-images__item">
+                <img src="" alt="Image of portfolio">
+            </div>
+            <div class="grid-images__item">
+                <img src="" alt="Image of portfolio">
+            </div>
+            <div class="grid-images__item">
+                <img src="" alt="Image of portfolio">
+            </div>
+            <div class="grid-images__item">
+                <button>LOAD MORE</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div class="portfolio-modal">
+        <span>
+            <i class="fa fa-remove"></i>
+        </span>
+        <div class="portfolio-modal__content">
+            <img src="" alt="">
+            <p>The mist over the mountains</p>
+        </div>
+
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="third-parallax">
+        <div class="third-parallax__text">
+            <span>CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="contact">
+        <h3>WHERE I WORK</h3>
+        <p>
+            <em>I'd love your feedback!</em>
+        </p>
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-4">
+                    <img src="" alt="">
+                </div>
+                <div class="grid__column-8">
+                    <i class="fas fa-map-marker"></i> Chicago, US
+                    <br>
+                    <i class="fas fa-phone-square-alt"></i> Phone: +00 151515
+                    <br>
+                    <i class="fas fa-envelope"></i> Email: mail@mail.com
+                    <br>
+                </div>
+                <p><p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p></p>
+                <form action="" class="contact">
+                    <div><input type="text" placeholder="Name"></div>
+                    <div><input type="text" placeholder="Email"></div>
+                    <input type="text" placeholder="Message">
+                    <button>
+                        <i class="fa fa-paper-plane"></i>
+                        SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="#home">
+            <i class="fa fa-arrow-up w3-margin-right"></i> To the top
+        </a>
+        <div class="footer-social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-snapchat"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>
+            Powered by
+            <a href="https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio">w3.css</a>
+        </p>
+    </div>
+
+
+
+
+    <script src="./assets/javascript/index.js"></script>
+</body>
+
+</html>
