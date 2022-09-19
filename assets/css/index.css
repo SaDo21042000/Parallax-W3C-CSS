@@ -1,0 +1,76 @@
+/* nav-start */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 5;
+}
+.nav-content {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-content a {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  float: left;
+}
+
+.nav-content a {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  float: left;
+}
+
+.nav-content a:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+.nav-content a:last-child {
+  float: right;
+}
+
+.nav-content a:last-child:hover {
+  color: white !important;
+  background-color: #f44336 !important;
+}
+
+/* nav-end */
+
+
+/* First Parallax Image stat */
+.first-parallax {
+    position: relative;
+    background-image:url(../../assets/images/parallax1.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.first-parallax__text {
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    background: black;
+}
+
+.first-parallax__text span {
+    padding: 12px 24px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 24px;
+}
+
+/* First Parallax Image end */
+
