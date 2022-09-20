@@ -14,7 +14,7 @@
 
 <body>
     <!-- Navbar (sit on top) -->
-    <div class="nav">
+    <div class="nav" id="myNavbar">
         <div class="nav-content">
             <a href="#">home</a>
             <a href="#"><i class="fa fa-user"></i> about</a>
@@ -30,9 +30,11 @@
     <!-- First Parallax Image with Logo Text -->
     <div class="first-parallax">
         <div class="first-parallax__text">
-            <span>my</span>
-            <span>website</span>
-            <span>logo</span>
+            <span>
+                my
+                <span>website</span>
+                logo
+            </span>
         </div>
     </div>
 
@@ -50,14 +52,16 @@
             consequat.</p>
         <div class="about-personal">
             <div class="about-personal__item">
-                <p>
+                <p class="about-personal__name">
                     <b><i class="fa fa-user w3-margin-right"></i> My Name</b>
                     <br>
-                    <img src="" alt="">
                 </p>
+                <br>
+                <img src="./assets/images/avatar_hat.jpg" alt="Avatar for about">
+
             </div>
             <div class="about-personal__item">
-                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <p class="about-personal__intro">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
@@ -195,7 +199,9 @@
                     <i class="fas fa-envelope"></i> Email: mail@mail.com
                     <br>
                 </div>
-                <p><p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p></p>
+                <p>
+                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                </p>
                 <form action="" class="contact">
                     <div><input type="text" placeholder="Name"></div>
                     <div><input type="text" placeholder="Email"></div>

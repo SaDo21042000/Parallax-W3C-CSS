@@ -1,6 +1,6 @@
 :root {
-    --text-color: #777;
-    /*--white-color: #fff;
+  --text-color: #777;
+  /*--white-color: #fff;
     --black-color: #000;
     --primary-color: rgb(238, 77, 45);
     --border-color: #dbdbdb;
@@ -9,77 +9,116 @@
     --header-height: 120px;*/
 }
 
-*{
-    font-family: "Lato", sans-serif;
+* {
+  font-family: "Lato", sans-serif;
+  color: var(--text-color);
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
+.nav-box-shadow {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.nav-animate-top {
+  position: relative;
+  animation: animatetop 0.4s;
+}
+
+.nav-white {
+  background-color: white;
+}
+
+/* animation*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*@keyframes animatetop {
+  from {
+  }
+  to {
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: animatetop;
+  }
+}*/
 
 /* grid->row->column */
 
 .grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .grid__full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 /*ratio: (100/12)*2 */
 .grid__column-2 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 16.6667%;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.6667%;
 }
 
 /* name class: show 5 column, we have 12/5= 2.4 */
 .grid__column-2-4 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 20%;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
 }
 
 .grid__column-10 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 83.3334%;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3334%;
 }
 
 /* temp */
 .grid {
-    width: 100%;
-    display: block;
-    padding: 0;
+  width: 100%;
+  display: block;
+  padding: 0;
 }
 
 .grid.wide {
-    max-width: 1200px;
-    margin: 0 auto;
-
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Tablet -PC low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
-    .wide {
-        width: 644px;
-    }
+  .wide {
+    width: 644px;
+  }
 }
 
 /* PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
-    .wide {
-        width: 984px;
-    }
+  .wide {
+    width: 984px;
+  }
 }
