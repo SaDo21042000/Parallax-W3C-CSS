@@ -107,7 +107,7 @@
 /* about start */
 .about {
   max-width: 980px;
-  margin: 0 301.500px;
+  margin: 0 301.5px;
   padding: 64px 12px;
   font-size: 15px;
 }
@@ -129,8 +129,6 @@
 .about p:nth-child(3) {
   line-height: 1.8;
 }
-
-
 
 .about-personal {
   display: flex;
@@ -155,20 +153,104 @@
   font-size: 15px;
 }
 
-
 .about-personal__item img {
   width: 100%;
   border-radius: 4px;
 }
 
 .about-specialize {
-  
+}
+.about-specialize-level {
+  background-color: #f1f1f1;
+}
+
+.about-specialize-level div {
+  color: red;
+  background-color: #616161;
+  text-align: center;
+  line-height: 1.8;
+  padding: 4px 8px;
+  color: #fff;
+}
+
+.about-specialize__90 {
+  width: 90%;
+}
+
+.about-specialize__85 {
+  width: 85%;
+}
+
+.about-specialize_75 {
+  width: 75%;
+}
+
+.about-specialize p {
+  letter-spacing: 10px;
+  line-height: 1.8;
+  font-size: 15px;
+  margin: 15px 0;
 }
 
 .about-specialize_level {
-  
 }
 
+.about p:nth-child(5) {
+  margin: 18px 0;
+  padding: 16px 0;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+}
 
+.rank-index {
+  display: flex;
+  background-color: #616161;
+  justify-content: space-between;
+  padding: 16px 0;
+ 
+}
+
+.rank-index__item {
+  color: #fff;
+  text-align: center;
+  width: 24.99999%;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 16px 0;
+}
+
+.rank-index__item span {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.8;
+}
 /* about end */
 
+ /*Second Parallax Image with Portfolio Text start*/
+ .second-parallax {
+  position: relative;
+  background-image: url(../../assets/images/parallax2.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+ }
+
+ .second-parallax__text {
+  position: absolute;
+  top: 43%;
+  left: 39%;
+}
+
+.second-parallax__text span {
+  padding: 12px 24px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 10px;
+  font-size: 36px;
+  line-height: 1.8;
+}
+  /*Second Parallax Image with Portfolio Text end*/
