@@ -259,6 +259,7 @@
 .portfolio {
   max-width: 980px;
   margin: 0 auto;
+  padding: 64px 0;
 }
 
 .portfolio h3 {
@@ -322,6 +323,7 @@
   height: 100%;
   color: #fff;
   background-color: #000;
+  display: none;
 }
 
 .portfolio-modal span {
@@ -361,5 +363,41 @@
 .portfolio-modal__content img {
   width: auto;
 }
-
 /*portfolio end*/
+
+/*Third Parallax Image start*/
+.third-parallax {
+  position: relative;
+  background-image: url(../../assets/images/parallax3.jpg);
+  min-height: 400px;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+}
+
+.third-parallax__text {
+  position: absolute;
+  top: 43%;
+  left: 39%;
+}
+
+.third-parallax__text span {
+  padding: 12px 24px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 10px;
+  font-size: 36px;
+  line-height: 1.8;
+}
+/*Third Parallax Image end*/
+
+
+/* contact start */
+.contact {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* contact end */

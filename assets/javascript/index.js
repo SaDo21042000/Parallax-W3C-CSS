@@ -9,3 +9,16 @@ function myFunction() {
         console.log("after")
     }
 }
+
+// Modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+//hide modal
+function hidePortfolioModal() {
+    document.getElementById("modal01").style.display = "none";
+}

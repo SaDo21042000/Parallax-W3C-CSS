@@ -136,50 +136,46 @@
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="portfolio-images">
             <div class="portfolio-images__item">
-                <img src="./assets/images/p1.jpg" alt="Image of portfolio">
+                <img src="./assets/images/p1.jpg" onclick="onClick(this)" alt="Image of portfolio">
             </div>
             <div class="portfolio-images__item">
-                <img src="./assets/images/p2.jpg" alt="Image of portfolio">
+                <img src="./assets/images/p2.jpg" onclick="onClick(this)" alt="Image of portfolio">
             </div>
             <div class="portfolio-images__item">
-                <img src="./assets/images/p3.jpg" alt="Image of portfolio">
+                <img src="./assets/images/p3.jpg" onclick="onClick(this)" alt="Image of portfolio">
             </div>
             <div class="portfolio-images__item">
-                <img src="./assets/images/p4.jpg" alt="Image of portfolio">
+                <img src="./assets/images/p4.jpg" onclick="onClick(this)" alt="Image of portfolio">
             </div>
         </div>
         <div class="portfolio-images">
             <div class="portfolio-images__item">
-                <img src="./assets/images/p5.jpg" alt="Image of portfolio">
+                <img src="./assets/images/p5.jpg" onclick="onClick(this)" alt="Image of portfolio">
             </div>
             <div class="portfolio-images__item">
-                <img src="./assets/images/p6.jpg" alt="Image of portfolio">
+                <img src="./assets/images/p6.jpg" onclick="onClick(this)" alt="Image of portfolio">
             </div>
             <div class="portfolio-images__item">
-                <img src="./assets/images/p7.jpg" alt="Image of portfolio">
+                <img src="./assets/images/p7.jpg" onclick="onClick(this)" alt="Image of portfolio">
             </div>
             <div class="portfolio-images__item">
-                <img src="./assets/images/p8.jpg" alt="Image of portfolio">
+                <img src="./assets/images/p8.jpg" onclick="onClick(this)" alt="Image of portfolio">
             </div>
         </div>
-
-
         <div class="portfolio-btn_loadmore">
             <button>LOAD MORE</button>
         </div>
-
     </div>
 
     <!-- Modal for full size images on click-->
-    <div class="portfolio-modal">
-        <span>
+    <div class="portfolio-modal" id="modal01">
+        <span onclick="hidePortfolioModal()">
             <i class="fa fa-remove"></i>
         </span>
         <div class="portfolio-modal__content">
-            <img src="./assets/images/p1.jpg" alt="Image of portfolio modal">
-            <p>The mist over the mountains</p>
+            <img src="./assets/images/p1.jpg" id="img01" alt="Image of portfolio modal">
+            <p id="caption">The mist over the mountains</p>
         </div>
-
     </div>
 
     <!-- Third Parallax Image with Portfolio Text -->
@@ -195,7 +191,7 @@
         <p>
             <em>I'd love your feedback!</em>
         </p>
-        <div class="grid">
+        <div class="contact-main">
             <div class="grid__row">
                 <div class="grid__column-4">
                     <img src="" alt="">
@@ -211,7 +207,7 @@
                 <p>
                 <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
                 </p>
-                <form action="" class="contact">
+                <form action="" class="contact-form">
                     <div><input type="text" placeholder="Name"></div>
                     <div><input type="text" placeholder="Email"></div>
                     <input type="text" placeholder="Message">
@@ -242,10 +238,6 @@
             <a href="https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#portfolio">w3.css</a>
         </p>
     </div>
-
-
-
-
     <script src="./assets/javascript/index.js"></script>
 </body>
 
