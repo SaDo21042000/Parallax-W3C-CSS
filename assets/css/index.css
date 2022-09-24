@@ -393,11 +393,183 @@
 }
 /*Third Parallax Image end*/
 
-
 /* contact start */
 .contact {
   max-width: 980px;
   margin: 0 auto;
 }
 
+.contact h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* selector: Selects all <p> elements where the parent is a <div> element */
+div.contact > p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.contact-main {
+  margin: 16px 0;
+  padding: 32px 0;
+}
+.contact-left {
+  width: 33.3333%;
+  float: left;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.contact-left img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.contact-right {
+  width: 66.6666%;
+  float: left;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.contact-right > p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.contact-info i {
+  padding-right: 12px;
+  padding-left: 4px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact-form {
+}
+
+.contact-form > div:nth-child(1) {
+  width: 49.99999%;
+  box-sizing: border-box;
+  float: left;
+  padding-right: 8px;
+}
+
+.contact-form > div:nth-child(2) {
+  width: 49.99999%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 8px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.contact-form > input {
+  margin-top: 8px;
+}
+
+.contact-form button {
+  padding: 8px 16px;
+  color: white;
+  background: black;
+  float: right;
+  cursor: pointer;
+  margin: 16px 0px;
+  font-size: 16px;
+  border: none;
+}
+
+.contact-form button i {
+  color: white;
+}
+
+.contact-form button:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+.contact-form button:hover i {
+  color: black;
+}
+
 /* contact end */
+
+/* footer start */
+.footer {
+  clear: both;
+  padding: 64px 0;
+  color: white;
+  background-color: black;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.footer > a {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.footer:hover {
+  opacity: 1;
+}
+.footer > a i {
+  color: black;
+  padding-right: 8px;
+}
+
+.footer > a {
+  padding: 8px 16px;
+  color: black;
+  background: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer > a:hover {
+  opacity: 0.6;
+}
+
+.footer-social {
+  margin: 24px 0;
+}
+
+.footer-social i {
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+}
+
+.footer-social i:hover {
+  opacity: 0.6;
+}
+
+.footer > p {
+  color: white;
+  font-size: 15px;
+}
+
+.footer > p > a {
+  color: white;
+  font-size: 15px;
+}
+
+.footer > p > a:hover {
+  color: #4caf50;
+  font-size: 15px;
+}
+
+/* footer end */
