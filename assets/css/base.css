@@ -1,12 +1,5 @@
 :root {
   --text-color: #777;
-  /*--white-color: #fff;
-    --black-color: #000;
-    --primary-color: rgb(238, 77, 45);
-    --border-color: #dbdbdb;
-    --star-gold-color: #FFCE3E;
-    --navbar-height: 34px;
-    --header-height: 120px;*/
 }
 
 * {
@@ -14,49 +7,13 @@
   color: var(--text-color);
 }
 
+
 body {
   margin: 0;
   padding: 0;
+  /*contain: content;*/
+  line-height: 1.8;
 }
-
-.nav-box-shadow {
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.nav-animate-top {
-  position: relative;
-  animation: animatetop 0.4s;
-}
-
-.nav-white {
-  background-color: white;
-}
-
-/* animation*/
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/*@keyframes animatetop {
-  from {
-  }
-  to {
-    animation-duration: 0.4s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: animatetop;
-  }
-}*/
 
 /* grid->row->column */
 
@@ -108,17 +65,4 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 /* Tablet -PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
-  .wide {
-    width: 644px;
-  }
-}
-
-/* PC low resolution */
-@media (min-width: 1024px) and (max-width: 1239px) {
-  .wide {
-    width: 984px;
-  }
-}

@@ -1,20 +1,214 @@
-/* the work debt
-- animate-top
-- 
+/* Responsive start */
+/* Mobile phone */
+@media screen and (max-width: 739px) {
+  .nav-content a {
+    display: none;
+  }
 
-*/
+  .nav-content a:first-child {
+    display: block !important;
+    float: right !important;
+  }
+
+  .nav-content a:first-child:hover {
+    background-color: black;
+  }
+
+  .nav-content a:first-child:hover i {
+    color: white;
+  }
+
+  .nav-content a:nth-child(2) {
+    display: block;
+  }
+
+  .nav-responsive {
+    clear: both;
+    display: none;
+    background-color: #fff;
+    color: #111;
+  }
+  .nav-responsive a {
+    display: block !important;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 100%;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #111;
+  }
+
+  /*<!-- First Parallax Image with Logo Text -->*/
+  .first-parallax {
+  }
+
+  .first-parallax__text span span {
+    display: none;
+  }
+
+  .first-parallax__text {
+    left: 24% !important;
+  }
+
+  /* About */
+
+  .about {
+    margin: 0 !important;
+  }
+
+  .about-personal div:nth-child(2) {
+    display: none !important;
+  }
+
+  .about-personal__item {
+    width: 100% !important;
+  }
+
+  .rank-index {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*<!-- Second Parallax Image with Portfolio Text -->*/
+
+  .second-parallax__text {
+    left: 11% !important;
+  }
+
+  .portfolio-images {
+    flex-direction: column;
+  }
+  .portfolio-images__item {
+    margin: 0 auto;
+  }
+
+  .portfolio-images__item img {
+    width: auto;
+    height: auto;
+    vertical-align: bottom !important;
+  }
+
+  .portfolio-modal__content {
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  /*<!-- Third Parallax Image with Portfolio Text -->*/
+  .third-parallax__text {
+    left: 18% !important;
+  }
+  /* Contact */
+  .contact-left {
+    width: 100% !important;
+    float: unset !important;
+  }
+
+  .contact {
+    padding: 64px 16px;
+  }
+  .contact-right {
+    width: 100% !important;
+    float: unset !important;
+  }
+
+  .contact-form > div:nth-child(1) {
+    width: 100% !important;
+    line-height: 1.8 !important;
+    padding-right: 0px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .contact-form > div:nth-child(2) {
+    width: 100% !important;
+    line-height: 1.8 !important;
+    padding-left: 0px !important;
+  }
+
+  .contact-form button {
+    line-height: 1.8 !important;
+  }
+}
+
+/* Tablet -PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .first-parallax__text {
+    left: 29% !important;
+  }
+
+  .about {
+    max-width: unset !important;
+    margin: 0 !important;
+  }
+  .second-parallax__text {
+    left: 29% !important;
+  }
+
+  .third-parallax__text {
+    left: 33% !important;
+  }
+
+  .portfolio {
+    padding: 64px 16px !important;
+  }
+
+  .portfolio-modal__content {
+    width: unset !important;
+    margin: unset !important;
+  }
+}
+
+/* PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .about {
+    max-width: unset !important;
+    margin: 0 14% !important;
+  }
+
+  .first-parallax__text {
+    left: 32% !important;
+  }
+
+  .about {
+    max-width: unset !important;
+  }
+  .second-parallax__text {
+    left: 32% !important;
+  }
+
+  .third-parallax__text {
+    left: 36% !important;
+  }
+
+  .portfolio {
+    padding: 64px 16px !important;
+  }
+
+  .portfolio-modal__content {
+    width: unset !important;
+    margin: unset !important;
+  }
+}
+/* Responsive end */
 
 /* nav-start */
 .nav {
   position: fixed;
   top: 0;
   width: 100%;
-  /*background-color: white;*/
   z-index: 5;
 }
+
+.nav-responsive {
+  display: none;
+}
+
 .nav-content {
   width: 100%;
   height: 100%;
+}
+
+.nav-content a:first-child {
+  display: none;
 }
 
 .nav-content a {
@@ -49,26 +243,56 @@
   color: white !important;
   background-color: #f44336 !important;
 }
+
+.nav-box-shadow {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.nav-white {
+  background-color: white;
+}
+
 @keyframes animatetop {
   from {
-    display: none;
+    top: -300px;
+    opacity: 0;
   }
   to {
-    display: block;
-    /*animation-duration: 0.4s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: animatetop;*/
+    top: 0;
+    opacity: 1;
   }
 }
 
 .animate-top {
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: animatetop;
 }
 
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate-zoom {
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: animatezoom;
+}
 /* nav-end */
 
 /* First Parallax Image stat */
@@ -192,9 +416,6 @@
   margin: 15px 0;
 }
 
-.about-specialize_level {
-}
-
 .about p:nth-child(5) {
   margin: 18px 0;
   padding: 16px 0;
@@ -255,7 +476,6 @@
 /*Second Parallax Image with Portfolio Text end*/
 
 /*portfolio start*/
-
 .portfolio {
   max-width: 980px;
   margin: 0 auto;
@@ -282,9 +502,6 @@
 .portfolio-images {
   display: flex;
   justify-content: space-evenly;
-}
-
-.portfolio-images {
 }
 
 .portfolio-images__item {
@@ -505,7 +722,6 @@ div.contact > p {
 .contact-form button:hover i {
   color: black;
 }
-
 /* contact end */
 
 /* footer start */
@@ -571,5 +787,4 @@ div.contact > p {
   color: #4caf50;
   font-size: 15px;
 }
-
 /* footer end */

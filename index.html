@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parallax</title>
     <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
 </head>
@@ -16,11 +15,20 @@
     <!-- Navbar (sit on top) -->
     <div class="nav" id="myNavbar">
         <div class="nav-content">
+            <a href="#" onclick="toggleFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <a href="#">home</a>
-            <a href="#"><i class="fa fa-user"></i> about</a>
-            <a href=""><i class="fa fa-th"></i> PORTFOLIO</a>
-            <a href=""><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href=""><i class="fa fa-search"></i></a>
+            <a href="#about"><i class="fa fa-user"></i> about</a>
+            <a href="#portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+        <div class="nav-responsive" id="nav-responsive">
+            <a href="#about" onclick="toggleFunction()">about</a>
+            <a href="#portfolio" onclick="toggleFunction()"> PORTFOLIO</a>
+            <a href="#contact" onclick="toggleFunction()"> CONTACT</a>
+            <a href="#">SEARCH</a>
         </div>
     </div>
 
@@ -39,7 +47,7 @@
     </div>
 
     <!-- Container (About Section) -->
-    <div class="about">
+    <div class="about" id="about">
         <h3>about me</h3>
         <p>I love photography</p>
         <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
@@ -123,7 +131,7 @@
     </div>
 
     <!-- Container (Portfolio Section) -->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <h3>MY WORK</h3>
         <p>
             <em>
@@ -172,7 +180,7 @@
         <span onclick="hidePortfolioModal()">
             <i class="fa fa-remove"></i>
         </span>
-        <div class="portfolio-modal__content">
+        <div class="portfolio-modal__content animate-zoom">
             <img src="./assets/images/p1.jpg" id="img01" alt="Image of portfolio modal">
             <p id="caption">The mist over the mountains</p>
         </div>
@@ -185,7 +193,8 @@
         </div>
     </div>
 
-    <div class="contact">
+    <!-- Contact -->
+    <div class="contact" id="contact">
         <h3>WHERE I WORK</h3>
         <p>
             <em>I'd love your feedback!</em>
